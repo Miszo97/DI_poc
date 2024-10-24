@@ -133,6 +133,9 @@ services_config = {
         "service": {
             "class": "ServiceB",
         },
+        "serializer": {
+            "class": "ClientAProductSerializer",
+        },
     },
     'client_b': {
         "data_source": {
@@ -141,6 +144,9 @@ services_config = {
         "service": {
             "class": "ServiceC",
         },
+        "serializer": {
+            "class": "ClientBProductSerializer",
+        },
     },
     'client_c': {
         "data_source": {
@@ -148,6 +154,9 @@ services_config = {
         },
         "service": {
             "class": "ServiceC",
+        },
+        "serializer": {
+            "class": "ClientCProductSerializer",
         },
     },
 }
